@@ -1,0 +1,261 @@
+{
+  "lang": "en",
+  "title": "ActivityWatch — report",
+  "brand": "ActivityWatch Report",
+
+  "weekdays": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+  "months": ["January", "February", "March", "April", "May", "June",
+             "July", "August", "September", "October", "November", "December"],
+  "months_genitive": ["January", "February", "March", "April", "May", "June",
+                      "July", "August", "September", "October", "November", "December"],
+  "date": {
+    "long": "{month} {day}, {year}",
+    "numeric": "%Y-%m-%d",
+    "short": "%m/%d"
+  },
+  "duration": {
+    "seconds": "{n}s",
+    "minutes": "{n}m",
+    "hours": "{n}h"
+  },
+  "list_and": " and ",
+  "quote": "“{text}”",
+
+  "plural": {
+    "day": ["day", "days"],
+    "app": ["app", "apps"],
+    "session": ["session", "sessions"],
+    "block": ["block", "blocks"],
+    "minute": ["minute", "minutes"],
+    "active": ["active", "active"],
+    "inactive": ["inactive", "inactive"],
+    "category_in": ["category", "categories"]
+  },
+
+  "category": {
+    "uncategorized": "Uncategorized",
+    "other": "Other"
+  },
+  "app": {
+    "unknown": "(unknown)"
+  },
+  "app_names": {
+    "explorer.exe": "File Explorer",
+    "taskmgr.exe": "Task Manager",
+    "cmd.exe": "Command Prompt",
+    "notepad.exe": "Notepad",
+    "windowsterminal.exe": "Windows Terminal",
+    "powershell.exe": "PowerShell"
+  },
+
+  "common": {
+    "how": "How this is calculated",
+    "no_data": "No data.",
+    "show_all": "Show all",
+    "warnings": "Warnings:"
+  },
+
+  "theme": {
+    "label": "Theme:",
+    "aria": "Theme",
+    "menu_title": "Appearance",
+    "dark": "dark",
+    "light": "light"
+  },
+
+  "banner": {
+    "active_days": "Active days",
+    "of": "of {total}",
+    "since": "since {date}",
+    "share": "{share}% of days active"
+  },
+
+  "kpi": {
+    "active": "Active time",
+    "average": "Average per day",
+    "games": "Time in games"
+  },
+
+  "delta": {
+    "none": "nothing to compare with",
+    "same": "same as the week before",
+    "suffix": "vs previous week"
+  },
+
+  "split": {
+    "title": "Computer-on time",
+    "total": "Total",
+    "active": "Active",
+    "other": "Other at the computer",
+    "afk": "AFK",
+    "afk_note": "<b>AFK</b> is time when the computer was on but you did not touch the keyboard or mouse for {minutes} or longer. Time when the computer was off or asleep is not included at all — ActivityWatch records nothing then.",
+    "other_note": "<b>Other at the computer</b> means you were active but the time did not land in any application: switching desktops, untitled windows and filtered-out system processes ({system}).",
+    "lenient_note": "<b>Active</b> in the {where} {listed} also includes AFK time while their window is focused: on a call or watching a video you listen without pressing anything. At most {cap} is credited from each AFK stretch — {counted} over the period, and it no longer counts as AFK."
+  },
+
+  "categories": {
+    "title": "Categories",
+    "segment": "{name} — {duration} · {share}%",
+    "merged": "Merged categories under {share}%: {list}",
+    "merged_item": "{name} — {duration}",
+    "uncategorized_note": "<b>{label}</b> — {apps}, {duration}. Assign them to categories in <code>{file}</code>; sorted by time, descending.",
+    "uncategorized_lines": "Show lines for {file}"
+  },
+
+  "apps": {
+    "title": "Top applications, all time",
+    "none": "No applications above the threshold.",
+    "sub": "{category} · {share}%",
+    "hidden": "{apps} under {duration} hidden."
+  },
+
+  "days": {
+    "title": "Activity over the last {days}",
+    "none": "No activity recorded in the last {days}.",
+    "aria": "Activity per day over the last {days}",
+    "point": "{date} ({weekday}) — {value}",
+    "no_data": "no data"
+  },
+
+  "by_month": {
+    "title": "By month",
+    "row": "{month} {year}",
+    "days": "{n} d",
+    "per_day": "/day",
+    "group": "{month} {days}",
+    "gaps": "<b>No data — {days}:</b> {list}. The computer was off: these days are left out of “d” and the daily average, and count as inactive in the banner."
+  },
+
+  "heat": {
+    "title": "When you are active",
+    "empty": "no activity",
+    "tip": "{day}, {start}-{end} · {value}",
+    "range": "{low} – {high}",
+    "less": "less",
+    "more": "more",
+    "peak": "peak: top {share} of hours, over {duration}",
+    "densest": "densest: {duration} (sum over all weeks of the period)"
+  },
+
+  "focus": {
+    "title": "Attention fragmentation",
+    "switches": "Switches",
+    "per_hour": "{value} / h",
+    "switches_sub": "{n} over the period",
+    "deep": "Focused",
+    "deep_sub": "in blocks > {duration}",
+    "deep_title": "{deep} in blocks over {duration} out of {total}",
+    "average": "Average block",
+    "row_title": "{category}: {blocks}, {rate} switches per hour",
+    "caption": "By category: share of time in blocks over {duration} and the average block",
+    "note_block": "<b>A block</b> is a continuous stay in one application. Focus shorter than {dwell} (alt-tab, a taskbar click, a notification) does not break the block and is not counted as a switch: its seconds go to the ongoing block.",
+    "note_pause": "A pause longer than {gap} closes the block without a switch: coming back to a different application after a break is a fresh start, not a jump of attention.",
+    "note_deep": "<b>Focused</b> is the share of active time in blocks longer than {duration}. Hover a category to see its switches per hour."
+  },
+
+  "rhythm": {
+    "title": "Daily rhythm",
+    "start": "Start",
+    "end": "End",
+    "median": "median of {days}",
+    "after": "After midnight",
+    "after_title": "{duration} of active time after midnight, {days} with such activity",
+    "week": "Week {start}–{end}",
+    "week_missing": "{period}: {reason}",
+    "no_data": "no data",
+    "unknown": "bounds unknown",
+    "week_title": "{period}: usually {span}, {days} with activity, after midnight {duration}",
+    "older": "Earlier weeks ({n})",
+    "caption": "By week, starting Monday: usual start and end of the day",
+    "note_day": "<b>A day</b> runs from {start} to {start} the next day: a session that ended at 02:33 is the end of the previous day, not the start of a new one.",
+    "note_bounds": "<b>Start and end</b> are the first and last active moment of the day; “usual” is the median over days with activity. The first observed day has no start and today has no end: there the boundary comes from the data, not from your schedule.",
+    "note_after": "<b>After midnight</b> is active time from 00:00 to {start} and its share of all active time."
+  },
+
+  "games": {
+    "title": "Games",
+    "total": "Total in games",
+    "distinct": "Different games",
+    "best_day": "Most active day",
+    "best_value": "{date} · {duration}",
+    "none": "No processes from the {category} category were seen.",
+    "today": "today",
+    "yesterday": "yesterday",
+    "ago": "{days} ago",
+    "sub": "{ago} · {sessions} · longest {duration}",
+    "order": "Sorted by last launch. A game session breaks after a pause over {duration}.",
+    "unplayed": "Installed but not launched during the observed period ({n})"
+  },
+
+  "sessions": {
+    "title": "Longest sessions",
+    "none": "No sessions longer than {duration}.",
+    "when": "{date}, {start} — {end}"
+  },
+
+  "warn": {
+    "no_afk": "No aw-watcher-afk bucket found — time is counted without the away filter, so numbers are inflated.",
+    "created": "Created <code>{file}</code> from the starter set — edit that file from now on.",
+    "demo": "Demo mode: the data is made up and is not anyone's real activity."
+  },
+
+  "footer": {
+    "about": "About this report",
+    "generated": "Generated {date} {time}.",
+    "sessions": "A session breaks on a pause over {duration} or on being away from the computer. Percentages in categories and the top list are of active time.",
+    "design": "Design — Material Design 2: 2014 palettes, elevation levels 2/6/12/24dp."
+  },
+
+  "category_warnings": {
+    "unreadable": "{file} cannot be read ({error}) — using the starter set.",
+    "empty": "{file} is empty — using the starter set.",
+    "unknown_policy": "unknown AFK policy “{policy}” in “{category}” — treating it as “{fallback}”",
+    "duplicate_process": "process “{process}” is listed in both “{first}” and “{second}” — keeping “{first}”",
+    "duplicate_pattern": "pattern “{pattern}” is listed in both “{first}” and “{second}” — keeping “{first}”",
+    "pattern_conflict": "“{process}” matches patterns of several categories ({detail}) — using “{winner}”"
+  },
+
+  "font_warnings": {
+    "no_dir": "EMBED_FONT is on, but the folder {directory} does not exist — the report uses the system font.",
+    "missing_face": "{stem}.woff2/.woff/.ttf not found in {directory} — weight {weight} falls back to the system font.",
+    "none_embedded": "no font file was embedded — the report uses the system font."
+  },
+
+  "errors": {
+    "unreachable": "Could not reach ActivityWatch ({api}): {error}\nCheck that ActivityWatch is running.",
+    "events": "Could not fetch events of {bucket}: {error}",
+    "no_window_bucket": "No aw-watcher-window bucket found.",
+    "no_window_events": "The window bucket has no events.",
+    "nothing_left": "No data left after filtering."
+  },
+
+  "cli": {
+    "saved": "Report saved: {path}",
+    "size": "Size: {kb} KB",
+    "font_size": " (font {kb} KB of it before base64)",
+    "no_font": "  (font not embedded)",
+    "archive_failed": "  ! Could not save the archive copy: {error}",
+    "archived": "Archive copy: {path}",
+    "pruned": "Old copies removed: {n} (limit {limit})",
+    "contrast": "Contrast falls short in {n} pairs:",
+    "demo": "Demo mode: the data is made up, no archive copy is kept."
+  },
+
+  "launch": {
+    "title": "ActivityWatch report",
+    "collect": "Error while collecting data:",
+    "render": "Error while building the report:",
+    "archive": "The report is open, but the archive copy could not be saved:"
+  },
+
+  "demo": {
+    "categories": {
+      "games": "Games",
+      "browser": "Browser",
+      "work": "Work/Dev",
+      "chat": "Communication",
+      "media": "Entertainment",
+      "system": "System"
+    }
+  }
+}

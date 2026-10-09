@@ -1,0 +1,11 @@
+{
+  "_note": "Display names instead of exe names. Copy this file to app_names.local.json and edit it: the local file is not in git and, when present, is used instead of this one. Keys are case-insensitive; several exe names may map to one name. Windows system programs (Task Manager, File Explorer...) are named in locales/*.json.",
+  "chrome.exe": "Chrome",
+  "firefox.exe": "Firefox",
+  "code.exe": "VS Code",
+  "discord.exe": "Discord",
+  "telegram.exe": "Telegram",
+  "steam.exe": "Steam",
+  "steamwebhelper.exe": "Steam",
+  "mygame-win64-shipping.exe": "My Game"
+}

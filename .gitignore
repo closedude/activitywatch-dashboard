@@ -1,0 +1,35 @@
+__pycache__/
+*.pyc
+
+# Generated reports — rebuilt by `python report.py` / `python report.py --demo`.
+dashboard*.html
+
+# Daily report copies (config.ARCHIVE_DIR).
+archive/
+
+# Personal data: your categories and app names. categories.json is created
+# from the starter set on the first run; to start app_names.local.json,
+# copy app_names.example.json.
+categories.json
+app_names.local.json
+
+# Font files for EMBED_FONT.
+fonts/
+
+# Local tooling and notes.
+.claude/
+CLAUDE.md
+
+# Reference material that is not part of the project.
+*.pdf
+
+# Backups, including the previous git history.
+.git-old-backup/
+*.bak
+*.backup
+*.orig
+*.old
+*~
+
+# Temporary previews during development.
+_preview_tmp.html
